@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router} from '@angular/router';
+import { PlantsComponent } from './pages/plants/plants.component';
+
 
 @Component({
   selector: 'app-root',

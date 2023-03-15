@@ -1,0 +1,33 @@
+<h2>MEDICINAL FLOWER</h2><br>
+<div style="background-color: rgb(238, 234, 234);">
+    <div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px;">
+        <div class="card border-secondary mb-3" *ngFor="let i of flower">
+          <img [src]="i.img2" />
+          <div class="info">
+            <h1>{{ i.name1 }}</h1>
+            <p>{{ i.desc1 }}</p>
+            <!-- <button routerLink="/units/recipe">READ MORE</button> -->
+            <!-- <button [routerLink]="['/units/recipe', i.id]">READ MORE</button> -->
+            <button> <a (click)="gotoHere(i.id)">view more</a></button>        
+      
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="about-us">
+      <div class="about">
+        <!--<img src="girl.png" class="pic">-->
+        <div class="text">
+          <h2>Role of Medicinal Flower </h2>
+          <!-- <h5>Front-end Developer & <span>Designer</span></h5> -->
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p> -->
+<p>Flower therapy is proven to be useful in cognitive issues like memory loss, stuttering and dyslexia. Physical ailments that arise out of psychological issues such as hypertension, asthma, insomnia, eating disorders, migraines and allergies can be cured with the healing properties of flowers.</p>
+            <div class="data">
+          <!-- <a href="#" class="hire">Hire Me</a> -->
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,19 @@
+
+        <div class="row">
+            <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4" *ngFor="let i of fruit">
+                <div class="feature-box-1">
+                    <div class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>{{i.tit}}</h5>
+                        <p>{{i.de}}</p>
+                        <!-- <button> <a (click)="gotoHere(i.id)">Buy now</a></button>         -->
+                        <button> <a (click)="gotoHere(i.id)">Book now</a></button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+           
