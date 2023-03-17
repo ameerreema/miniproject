@@ -6,19 +6,7 @@ import { HeroService } from 'src/app/hero.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-  email:string=''
-  password:string=''
+export class LoginComponent {}
 
 
-  constructor(private fs:HeroService){}
 
-  login(){
-    this.fs.login(this.email,this.password)
-    this.email=''
-    this.password=''
-
-  }
-
-
-}

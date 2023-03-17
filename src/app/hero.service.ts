@@ -25,18 +25,6 @@ export class HeroService {
       })
   }
 
-  //login
-login(email:string,password:string){
-
-  createUserWithEmailAndPassword(this.auth,email,password).then((res))=> {
-      console.log("data added successfully")
-       this.router.navigate(['/home'])
-  }).catch(err=>{
-    alert(err)
-  })
-
-}
-
 
 
 
