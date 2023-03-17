@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "medicare-9ace3": {
+      "hosting": {
+        "mini": [
+          "medicare-9ace3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "medicare-9ace3"
+  }
+}
