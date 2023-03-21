@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HeroService } from 'src/app/hero.service';
+import { AuthService } from 'src/app/shared/auth.service';
+// import { AuthService } from 'src/app/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,17 +9,27 @@ import { HeroService } from 'src/app/hero.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-  name:string=''
-  email:string=''
-  password:string=''
+  
+  email :  string = '';
+  password : string = '';
+  
+  constructor(private auth :AuthService){}
 
-  constructor(private fs:HeroService){}
-
-  signup(){
-    this.fs.signup(this.name,this.email,this.password)
-    this.name=''
-    this.email=''
-    this.password=''
+  register()
+  {
+    if(this.email == ''){
+      alert('please enter email')
+       return;
+    }
+    if(this.password == ''){
+      alert('please enter password')
+       return;
+    }
+   
+       
+    this.auth.register(this.email,this.password);
+    this.email = '';
+    this.password = '';
+    
   }
-
 }
